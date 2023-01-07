@@ -1,7 +1,7 @@
 
 from marshmallow import Schema, fields
 
-from demostration_solution.setup_db import db
+from setup_db import db
 
 
 class Director(db.Model):

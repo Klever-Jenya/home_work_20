@@ -34,6 +34,7 @@ class MovieService:
         if "director_id" in movie_d:
             movie.director_id = movie_d.get("director_id")
         self.dao.update(movie)
+        # return None (по умолчанию). можно опустить и не писать)))
 
     def delete(self, rid):
         self.dao.delete(rid)
